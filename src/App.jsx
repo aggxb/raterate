@@ -1,5 +1,26 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import Login from './pages/Login';
+import About from './pages/About';
+import UserArea from './pages/UserArea';
+import TitleDetails from './pages/TitleDetails';
+import List from './pages/List';
+import NotFound from './pages/NotFound';
+
 const App = () => {
-  return <h1>Olá, Mundo!</h1>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="login/*" element={<Login />} />
+        <Route path="user/:id" element={<UserArea />} />
+        <Route path="title/:id" element={<TitleDetails />} />
+        <Route path="list/:id" element={<List />} />
+        <Route path="about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;
