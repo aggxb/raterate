@@ -4,7 +4,7 @@ import Header from '../components/Header'
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className='rad-gradient'>
       <Header />
       <h1>MainLayout</h1>
       <Outlet />
