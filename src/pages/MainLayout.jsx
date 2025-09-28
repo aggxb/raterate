@@ -1,17 +1,25 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const MainLayout = () => {
-  return (
-    <div className='rad-gradient'>
-      <Header />
-      <h1>MainLayout</h1>
-      <Outlet />
-      <Footer />
-    </div>
-  )
-}
+  const height = document.documentElement.clientHeight; // h-211
 
-export default MainLayout
+  console.log(height)
+  return (
+    <div className="rad-gradient">
+      <div className='container grid grid-rows-[auto_1fr] min-h-screen'>
+        <Header />
+        <div className="flex flex-col divide-y-1 divide-c1blue/20 last:*:mt-5">
+          <main className='flex-grow'>
+            <Outlet />
+          </main>
+          <Footer />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MainLayout;

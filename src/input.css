@@ -88,6 +88,6 @@
 
 @layer components {
   .rad-gradient {
-    @apply bg-radial from-[var(--color-c4blue)] to-[var(--color-c6blue)] h-screen w-full;
+    @apply bg-radial from-[var(--color-c4blue)] to-[var(--color-c6blue)] w-full;
   }
 }

@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-50: oklch(98.7% 0.022 95.277);
     --spacing: 0.25rem;
     --radius-md: 0.375rem;
     --default-font-family: var(--font-sans);
@@ -15,7 +14,6 @@
     --color-c1blue: #e6ecf7;
     --color-c2blue: #afc4e8;
     --color-c4blue: #1b3d73;
-    --color-c5blue: #1b3d73;
     --color-c6blue: #030812;
     --font-h: 'Poppins', sans-serif;
     --font-b: 'Inter', sans-serif;
@@ -198,23 +196,8 @@
   .-mx-2 {
     margin-inline: calc(var(--spacing) * -2);
   }
-  .mx-2 {
-    margin-inline: calc(var(--spacing) * 2);
-  }
-  .mx-3 {
-    margin-inline: calc(var(--spacing) * 3);
-  }
   .-mr-3 {
     margin-right: calc(var(--spacing) * -3);
-  }
-  .mr-3 {
-    margin-right: calc(var(--spacing) * 3);
-  }
-  .-ml-3 {
-    margin-left: calc(var(--spacing) * -3);
-  }
-  .ml-3 {
-    margin-left: calc(var(--spacing) * 3);
   }
   .ml-auto {
     margin-left: auto;
@@ -225,12 +208,15 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .size-10 {
     width: calc(var(--spacing) * 10);
     height: calc(var(--spacing) * 10);
+  }
+  .h-211 {
+    height: calc(var(--spacing) * 211);
+  }
+  .min-h-screen {
+    min-height: 100vh;
   }
   .w-full {
     width: 100%;
@@ -238,14 +224,17 @@
   .max-w-max {
     max-width: max-content;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .flex-grow {
+    flex-grow: 1;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
-  .resize {
-    resize: both;
+  .grid-rows-\[auto_1fr\] {
+    grid-template-rows: auto 1fr;
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -276,6 +265,23 @@
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 1) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .divide-y-1 {
+    :where(& > :not(:last-child)) {
+      --tw-divide-y-reverse: 0;
+      border-bottom-style: var(--tw-border-style);
+      border-top-style: var(--tw-border-style);
+      border-top-width: calc(1px * var(--tw-divide-y-reverse));
+      border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    }
+  }
+  .divide-c1blue\/20 {
+    :where(& > :not(:last-child)) {
+      border-color: color-mix(in srgb, #e6ecf7 20%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        border-color: color-mix(in oklab, var(--color-c1blue) 20%, transparent);
+      }
     }
   }
   .place-self-center {
@@ -309,21 +315,11 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
   .text-c1blue {
     color: var(--color-c1blue);
   }
   .text-c2blue {
     color: var(--color-c2blue);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .outline-none {
     --tw-outline-style: none;
@@ -342,6 +338,13 @@
   .\*\:text-c1blue {
     :is(& > *) {
       color: var(--color-c1blue);
+    }
+  }
+  .last\:\*\:mt-5 {
+    &:last-child {
+      :is(& > *) {
+        margin-top: calc(var(--spacing) * 5);
+      }
     }
   }
   .max-md\:order-2 {
@@ -443,7 +446,6 @@
 }
 @layer components {
   .rad-gradient {
-    height: 100vh;
     width: 100%;
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
@@ -477,12 +479,12 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-border-style {
+@property --tw-divide-y-reverse {
   syntax: "*";
   inherits: false;
-  initial-value: solid;
+  initial-value: 0;
 }
-@property --tw-outline-style {
+@property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
@@ -538,8 +540,8 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
+      --tw-divide-y-reverse: 0;
       --tw-border-style: solid;
-      --tw-outline-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
       --tw-gradient-via: #0000;
