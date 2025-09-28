@@ -8,7 +8,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="container grid gap-5">
+    <footer className="grid gap-5">
       <div className='flex justify-between self-end max-md:grid max-md:gap-5'>
         <ul className="self-start space-y-1 text-p-s -mx-2 *:text-c1blue">
           <li><Link to="sobre" className='py-1 px-2'>sobre.</Link></li>
