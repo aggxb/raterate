@@ -326,6 +326,19 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-t-1 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-c1blue {
+    border-color: var(--color-c1blue);
+  }
+  .border-c1blue\/20 {
+    border-color: color-mix(in srgb, #e6ecf7 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-c1blue) 20%, transparent);
+    }
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -340,6 +353,15 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
   }
   .text-center {
     text-align: center;
