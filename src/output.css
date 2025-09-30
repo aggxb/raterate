@@ -199,6 +199,9 @@
   .-mr-3 {
     margin-right: calc(var(--spacing) * -3);
   }
+  .mb-30 {
+    margin-bottom: calc(var(--spacing) * 30);
+  }
   .ml-auto {
     margin-left: auto;
   }
@@ -212,11 +215,11 @@
     width: calc(var(--spacing) * 10);
     height: calc(var(--spacing) * 10);
   }
-  .h-211 {
-    height: calc(var(--spacing) * 211);
-  }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-fit {
+    width: fit-content;
   }
   .w-full {
     width: 100%;
@@ -238,6 +241,9 @@
   }
   .flex-wrap {
     flex-wrap: wrap;
+  }
+  .place-items-center {
+    place-items: center;
   }
   .place-items-end {
     place-items: end;
@@ -314,6 +320,9 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .text-center {
+    text-align: center;
   }
   .text-c1blue {
     color: var(--color-c1blue);
