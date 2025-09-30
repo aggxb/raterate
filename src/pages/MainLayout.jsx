@@ -6,14 +6,10 @@ import Footer from '../components/Footer';
 const MainLayout = () => {
   return (
     <div className="rad-gradient">
-      <div className="container grid grid-rows-[auto_1fr] min-h-screen">
+      <div className="container grid grid-rows-[auto_1fr_auto] min-h-[100.053vh]">
         <Header />
-        <div className="flex flex-col divide-y-1 divide-c1blue/20 last:*:mt-5">
-          <main className="flex-grow">
-            <Outlet />
-          </main>
-          <Footer />
-        </div>
+        <Outlet />
+        <Footer />
       </div>
     </div>
   );
