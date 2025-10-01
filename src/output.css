@@ -202,9 +202,6 @@
   .-mr-3 {
     margin-right: calc(var(--spacing) * -3);
   }
-  .mb-30 {
-    margin-bottom: calc(var(--spacing) * 30);
-  }
   .ml-auto {
     margin-left: auto;
   }
@@ -221,20 +218,11 @@
     width: calc(var(--spacing) * 10);
     height: calc(var(--spacing) * 10);
   }
-  .max-h-10 {
-    max-height: calc(var(--spacing) * 10);
-  }
-  .max-h-11 {
-    max-height: calc(var(--spacing) * 11);
-  }
   .max-h-12 {
     max-height: calc(var(--spacing) * 12);
   }
   .min-h-\[100\.053vh\] {
     min-height: 100.053vh;
-  }
-  .min-h-screen {
-    min-height: 100vh;
   }
   .w-fit {
     width: fit-content;
@@ -242,29 +230,14 @@
   .w-full {
     width: 100%;
   }
+  .max-w-\[500px\] {
+    max-width: 500px;
+  }
   .max-w-max {
     max-width: max-content;
   }
-  .min-w-fit {
-    min-width: fit-content;
-  }
-  .min-w-full {
-    min-width: 100%;
-  }
-  .min-w-lg {
-    min-width: var(--container-lg);
-  }
-  .min-w-max {
-    min-width: max-content;
-  }
-  .min-w-md {
-    min-width: var(--container-md);
-  }
-  .min-w-sm {
-    min-width: var(--container-sm);
-  }
-  .flex-grow {
-    flex-grow: 1;
+  .min-w-\[500px\] {
+    min-width: 500px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -277,9 +250,6 @@
   }
   .grid-rows-\[auto_1fr_auto\] {
     grid-template-rows: auto 1fr auto;
-  }
-  .flex-col {
-    flex-direction: column;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -299,6 +269,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
@@ -308,9 +281,6 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
-  }
   .space-y-1 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -318,25 +288,8 @@
       margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
-  .divide-y-1 {
-    :where(& > :not(:last-child)) {
-      --tw-divide-y-reverse: 0;
-      border-bottom-style: var(--tw-border-style);
-      border-top-style: var(--tw-border-style);
-      border-top-width: calc(1px * var(--tw-divide-y-reverse));
-      border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-    }
-  }
-  .divide-c1blue {
-    :where(& > :not(:last-child)) {
-      border-color: var(--color-c1blue);
-    }
-  }
   .place-self-center {
     place-self: center;
-  }
-  .self-end {
-    align-self: flex-end;
   }
   .self-start {
     align-self: flex-start;
@@ -381,12 +334,6 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .pt-5 {
-    padding-top: calc(var(--spacing) * 5);
-  }
-  .pt-6 {
-    padding-top: calc(var(--spacing) * 6);
   }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
@@ -526,11 +473,6 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-divide-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -592,7 +534,6 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
-      --tw-divide-y-reverse: 0;
       --tw-border-style: solid;
       --tw-outline-style: solid;
       --tw-gradient-position: initial;
