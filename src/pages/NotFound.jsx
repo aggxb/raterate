@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   return (
-    <section className="grid gap-5 mb-30 place-items-center">
+    <section className="content-container grid gap-5 place-items-center">
       <div>
         <img src={NotFoundImg} alt="Page not found image" />
       </div>
