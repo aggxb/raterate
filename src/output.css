@@ -236,9 +236,6 @@
   .max-w-max {
     max-width: max-content;
   }
-  .min-w-\[500px\] {
-    min-width: 500px;
-  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -358,6 +355,15 @@
     --tw-outline-style: none;
     outline-style: none;
   }
+  .text-h1-l {
+    font: 600 3.75rem/1.2 var(--font-h);
+  }
+  .text-h1-m {
+    font: 600 2.5rem/1.2 var(--font-h);
+  }
+  .text-h1-s {
+    font: 600 2rem/1.2 var(--font-h);
+  }
   .text-h3-l {
     font: 500 1.75rem/1.3 var(--font-h);
   }
@@ -415,6 +421,11 @@
   .max-md\:gap-5 {
     @media (width < 48rem) {
       gap: calc(var(--spacing) * 5);
+    }
+  }
+  .max-md\:text-h1-s {
+    @media (width < 48rem) {
+      font: 600 2rem/1.2 var(--font-h);
     }
   }
   .max-\[26rem\]\:mx-0 {
