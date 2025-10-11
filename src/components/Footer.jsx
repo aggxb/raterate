@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="grid gap-5 border-t-1 border-c1blue/20 pt-8">
       <div className="flex justify-between max-md:grid max-md:gap-5">
-        <ul className="self-start space-y-1 text-p-s -mx-2 *:text-c1blue">
+        <ul className="self-start space-y-1 text-paragraph -mx-2 *:text-c1blue">
           <li>
             <Link to="sobre" className="py-1 px-2">
               sobre.
@@ -23,7 +23,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="grid place-items-end gap-2 max-md:place-items-start">
-          <p className="text-p-s text-c1blue">desenvolvido por aggxb.</p>
+          <p className="text-paragraph text-c1blue">desenvolvido por aggxb.</p>
           <ul className="flex gap-6">
             <li>
               <a href="https://github.com/aggxb" target="_blank">
@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
       <Link
         to="/"
-        className="py-1 px-2 -mx-2 max-w-max text-p-l text-c2blue place-self-center"
+        className="py-1 px-2 -mx-2 max-w-max text-paragraph text-c2blue place-self-center"
       >
         raterate. {year}
       </Link>
