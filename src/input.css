@@ -30,64 +30,56 @@
   }
 }
 
-@utility text-h0-l {
-  font: 600 4.5rem/1.1 var(--font-h);
-}
-@utility text-h0-m {
+@utility text-hero {
   font: 600 3.75rem/1.1 var(--font-h);
-}
-@utility text-h0-s {
-  font: 600 3rem/1.1 var(--font-h);
+  @media (width <= 64rem) {
+    font: 600 2.5rem/1.1 var(--font-h);
+  };
+  @media (width <= 40rem) {
+    font: 600 2rem/1.1 var(--font-h);
+  };
 }
 
-@utility text-h1-l {
-  font: 600 3.75rem/1.2 var(--font-h);
-}
-@utility text-h1-m {
+@utility text-title {
   font: 600 2.5rem/1.2 var(--font-h);
-}
-@utility text-h1-s {
-  font: 600 2rem/1.2 var(--font-h);
+  @media (width <= 48rem) {
+    font: 600 2rem/1.2 var(--font-h);
+  }
 }
 
-@utility text-h2-l {
+@utility text-subtitle {
   font: 500 2.25rem/1.3 var(--font-h);
-}
-@utility text-h2-m {
-  font: 500 2rem/1.3 var(--font-h);
-}
-@utility text-h2-s {
-  font: 500 1.75rem/1.3 var(--font-h);
+  @media (width <= 48rem) {
+      font: 500 1.75rem/1.3 var(--font-h);
+  }
 }
 
-@utility text-h3-l {
-  font: 500 1.75rem/1.3 var(--font-h);
-}
-@utility text-h3-m {
+@utility text-subtitle-s {
   font: 500 1.625rem/1.3 var(--font-h);
-}
-@utility text-h3-s {
-  font: 500 1.375rem/1.3 var(--font-h);
+  @media (width <= 48rem) {
+    font: 500 1.375rem/1.3 var(--font-h);
+  }
 }
 
-@utility text-p-l {
-  font: 400 1.5rem/1.6 var(--font-b);
-}
-@utility text-p-m {
+@utility text-paragraph {
   font: 400 1.25rem/1.6 var(--font-b);
-}
-@utility text-p-s {
-  font: 400 1.125rem/1.6 var(--font-b);
+  @media (width <= 48rem) {
+    font: 400 1rem/1.6 var(--font-b);
+  }
 }
 
-@utility text-btn-l {
-  font: 500 1.5rem/1.5 var(--font-b);
+@utility text-paragraph-s {
+  font: 400 1rem/1.6 var(--font-b);
+  @media (width <= 48rem) {
+    font: 400 .75rem/1.6 var(--font-b);
+  }
 }
-@utility text-btn-m {
+
+@utility text-button {
   font: 500 1.25rem/1.5 var(--font-b);
-}
-@utility text-btn-s {
-  font: 500 1rem/1.5 var(--font-b);
+  @media (width <= 48rem) {
+    font: 500 1rem/1.5 var(--font-b);
+  }
 }
 
 @layer components {

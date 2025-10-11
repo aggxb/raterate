@@ -1,12 +1,13 @@
 import React from 'react';
-import { textColors, fonts } from '../../styles/theme';
+import { textColors } from '../../styles/theme';
 
-const Subtitle = ({ children, text, font, Component = 'h2' }) => {
-  const fontSize = fonts[font] || fonts.subtitle;
+const Subtitle = ({ children, text, font, component }) => {
+  const Component = component || 'h2';
+  const typeFont = font || 'text-subtitle';
   const textColor = textColors[text] || textColors.c2;
 
   return (
-    <Component className={`${fontSize} ${textColor}`}>{children}</Component>
+    <Component className={`${typeFont} ${textColor}`}>{children}</Component>
   );
 };
 

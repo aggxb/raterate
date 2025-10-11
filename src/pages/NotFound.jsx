@@ -8,7 +8,7 @@ const NotFound = () => {
       <div className='max-w-[500px]'>
         <img src={NotFoundImg} alt="Page not found image"/>
       </div>
-      <Link to="/" className="py-1 w-fit text-h3-l text-center  text-c1blue">
+      <Link to="/" className="py-1 w-fit text-subtitle-s text-center text-c1blue">
         volte para a home.
       </Link>
     </section>
