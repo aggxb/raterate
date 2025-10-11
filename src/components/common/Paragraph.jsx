@@ -1,11 +1,11 @@
 import React from 'react'
+import { colors } from '../../styles/theme';
 
-const Paragraph = ({children, color, font }) => {
-  const textFont;
-  const textColor;
+const Paragraph = ({children, color }) => {
+  const textColor = colors[color] || colors.c1;
 
   return (
-    <p className={`${textFont} ${textColor}`}>{children}</p>
+    <p className={`text-p-m ${textColor} max-md:text-p-s`}>{children}</p>
   )
 }
 
