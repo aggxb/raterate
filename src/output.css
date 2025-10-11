@@ -331,8 +331,35 @@
       border-color: color-mix(in oklab, var(--color-c1blue) 20%, transparent);
     }
   }
+  .bg-c1blue {
+    background-color: var(--color-c1blue);
+  }
   .bg-c2blue {
     background-color: var(--color-c2blue);
+  }
+  .bg-c3blue {
+    background-color: var(--color-c3blue);
+  }
+  .bg-c4blue {
+    background-color: var(--color-c4blue);
+  }
+  .bg-c5blue {
+    background-color: var(--color-c5blue);
+  }
+  .bg-c6blue {
+    background-color: var(--color-c6blue);
+  }
+  .bg-green {
+    background-color: var(--color-green);
+  }
+  .bg-red {
+    background-color: var(--color-red);
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .bg-yellow {
+    background-color: var(--color-yellow);
   }
   .content-container {
     padding: 4rem 0;
