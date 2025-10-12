@@ -387,18 +387,6 @@
   .text-yellow {
     color: var(--color-yellow);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .text-hero {
-    font: 600 3.75rem/1.1 var(--font-h);
-    @media (width <= 64rem) {
-      font: 600 2.5rem/1.1 var(--font-h);
-    }
-    @media (width <= 40rem) {
-      font: 600 2rem/1.1 var(--font-h);
-    }
-  }
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
@@ -413,12 +401,6 @@
     font: 400 1.25rem/1.6 var(--font-b);
     @media (width <= 48rem) {
       font: 400 1rem/1.6 var(--font-b);
-    }
-  }
-  .text-paragraph-s {
-    font: 400 1rem/1.6 var(--font-b);
-    @media (width <= 48rem) {
-      font: 400 .75rem/1.6 var(--font-b);
     }
   }
   .text-subtitle {
