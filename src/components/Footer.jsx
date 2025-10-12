@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex justify-between max-md:grid max-md:gap-5">
         <ul className="self-start space-y-1 text-paragraph -mx-2 *:text-c1blue">
           <li>
-            <Link to="sobre" className="py-1 px-2">
+            <Link to="about" className="py-1 px-2">
               sobre.
             </Link>
           </li>
