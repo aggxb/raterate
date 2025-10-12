@@ -6,7 +6,13 @@ const Button = ({ children, bg, text, onClick }) => {
   const bgColor = bgColors[bg] || bgColors.c6;
 
   return (
-    <button type='button' onClick={onClick} className={`py-2 px-3 rounded-md size-fit text-button ${textColor} ${bgColor}`}>{children}</button>
+    <button
+      type="button"
+      onClick={onClick}
+      className={`py-2 px-3 rounded-md size-fit cursor-pointer text-button ${textColor} ${bgColor}`}
+    >
+      {children}
+    </button>
   );
 };
 
