@@ -8,7 +8,9 @@ const MainLayout = () => {
     <div className="rad-gradient">
       <div className="container grid grid-rows-[auto_1fr_auto] min-h-[100.053vh]">
         <Header />
-        <Outlet />
+        <main className="content-container">
+          <Outlet />
+        </main>
         <Footer />
       </div>
     </div>

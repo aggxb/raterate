@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-c1blue: #e6ecf7;
@@ -24,6 +24,8 @@
 }
 
 @utility content-container {
+  display: flex;
+  flex-direction: column;
   padding: 4rem 0;
   @media (width <= 48rem) {
     padding: 2rem 0;
@@ -34,10 +36,10 @@
   font: 600 3.75rem/1.1 var(--font-h);
   @media (width <= 64rem) {
     font: 600 2.5rem/1.1 var(--font-h);
-  };
+  }
   @media (width <= 40rem) {
     font: 600 2rem/1.1 var(--font-h);
-  };
+  }
 }
 
 @utility text-title {
@@ -50,7 +52,7 @@
 @utility text-subtitle {
   font: 500 2.25rem/1.3 var(--font-h);
   @media (width <= 48rem) {
-      font: 500 1.75rem/1.3 var(--font-h);
+    font: 500 1.75rem/1.3 var(--font-h);
   }
 }
 
@@ -71,7 +73,7 @@
 @utility text-paragraph-s {
   font: 400 1rem/1.6 var(--font-b);
   @media (width <= 48rem) {
-    font: 400 .75rem/1.6 var(--font-b);
+    font: 400 0.75rem/1.6 var(--font-b);
   }
 }
 
